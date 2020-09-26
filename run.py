@@ -1,35 +1,29 @@
 #If you see this, then I did something right.
 from flask import Flask, request, jsonify, render_template
-from google.cloud import bigquery
+from query import query
+import datetime
 import json
 app = Flask(__name__)
-
 
 @app.route("/")
 def index():
     return render_template("index.html")
 
 @app.route('/bq', methods=['GET'])
-def query():
-    client = bigquery.Client()
-
+def send():
+    destination = 'New York'
+    date = datetime.date(2020, 9, 23)
+    
     # Perform a query.
     QUERY = (
         'SELECT * FROM `bigquery-public-data.covid19_public_forecasts.county_14d` '
-        'WHERE state_name = "New York" '
+        f'WHERE state_name = "{destination}" '
         'AND prediction_date > forecast_date '
         'ORDER BY prediction_date '
         'LIMIT 100')
-    query_job = client.query(QUERY)  # API request
-    rows = query_job.result()  # Waits for query to finish
-    clean = []
-    # Iterate through result
-    for row in rows:
-        clean.append(row)
-    res = []
-    for row in clean:
-        res.append(dict(row))
-    return jsonify(res)
+
+    result = query(QUERY)
+    return jsonify(result)
     
 # POST example template
 # @app.route('/', methods=['POST'])
