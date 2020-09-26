@@ -5,32 +5,28 @@
 
 from google.cloud import bigquery
 
-def stateQuery(state) :
+def stateQuery(statecode) :
 
     client = bigquery.Client.from_service_account_json("ShellHacks2020-487e58d8d077.json")
-    query_job = client.query(
-        """
+
+    #Parameterized Query
+    query = '''
         SELECT *
         FROM `bigquery-public-data.covid19_public_forecasts.state_14d`
-        WHERE state_name = """ + state
-
+        WHERE state_fips_code = @state_fips_code 
+            AND prediction_date >= forecast_date
+        ORDER BY prediction_date
+    '''
+    job_config = bigquery.QueryJobConfig(
+        query_paramters=[
+            bigquery.ScalarQueryParameter("state_fips_code", "INT64", statecode)
+        ]
     )
-    print("The query data:")
+    query_job = client.query(query, job_config=job_config)
+
     for row in query_job:
         # Row values can be accessed by field name or index.
-        print("name={}, count={}".format(row[0], row["total_people"]))
+        print("name={}, count={}".format(row[0], row["new_deaths"]))
     return()
 
-
-# def countyQuery(county, state) :
-#     client = bigquery.Client.from_service_account_json(ShellHacks2020-487e58d8d077.json)
-#     query_job = client.query(
-#         """
-#         SELECT *
-#         FROM `bigquery-public-data.covid19_public_forecasts.state_14d`
-#         WHERE state_name = @state
-#         """
-#     )
-#     return(query_job)
-
-stateQuery("Texas")
+stateQuery(48)
