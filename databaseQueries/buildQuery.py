@@ -1,3 +1,8 @@
+#Uses key terms extracted by whichRequest to
+# - build query
+# - request from bigQuery database
+# - return the result to be handled by interpretQUery
+
 from google.cloud import bigquery as bq
 
 def stateQuery(state) :
