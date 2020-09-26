@@ -8,3 +8,5 @@ def getKeywords(request)
     date = keywords[1]
 
     return state, date
+
+####
