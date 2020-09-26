@@ -1,6 +1,10 @@
 #If you see this, then I did something right.
 from flask import Flask, request, jsonify, render_template
-from query import query
+from google.cloud import bigquery
+import os
+import dialogflow
+import requests
+import pusher
 import datetime
 import json
 app = Flask(__name__)
@@ -14,7 +18,7 @@ def send():
     destination = 'New York'
     date = datetime.date(2020, 9, 23)
     
-    # Perform a query.
+    #Perform a query.
     QUERY = (
         'SELECT * FROM `bigquery-public-data.covid19_public_forecasts.county_14d` '
         f'WHERE state_name = "{destination}" '
@@ -43,4 +47,4 @@ def send():
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=True, port=80)
