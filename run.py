@@ -1,4 +1,3 @@
-#If you see this, then I did something right.
 from flask import Flask, render_template
 app = Flask(__name__)
 
