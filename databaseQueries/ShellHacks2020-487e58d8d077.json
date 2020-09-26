@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "shellhacks2020-290707",
+  "private_key_id": "487e58d8d0775b1409b36827cad09cc92ad32928",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCvM1J94e82JQIY\nNtfXSyo5Z6DY1MeHdRMHPJ6qRB8wdnRZUMQGb1YadO3nrL+yVVW5nftwvqDeD1+t\nXBACkIUXSs88bQiJ7noa3CmPrfOBaWZki7Tim29hhrbvYdLX+gZfojlJKmoR6YsH\nBYUeUAgKikG8vJ3vplI8hqm5NkLjcrcRqVBDj50A6sdOYEkqFL5cBQ1ZpAySiOwE\nsuyP4ZPG0/N2G9hlnQKL/+PT0K5nJMibwkPfe+916OyX9WmcsaRtn5dF3PnrfDU5\nLOHXQSTQRsKczDZ1TE9QIoxRKf97vQMdC4SqM5/soSjKxTknWo/YPY0Ynyo3mtOE\na5T21IeVAgMBAAECggEACMiK/EPMB+agktazCPiGzXnIGv7F4bZemxhbVaq/ITab\nEXw8APJAJT499sVWwfRxwlxs0I5EsdqgSmhpEWaDPvOcQp8DvyiCch9zV6BEqt+o\nx2XSo8wKRYp+WC91utKufZ5m0/0enrca5iH3y8PUN1+5jneqolWwCJfxYSya0LIT\nDhLLVB8EH9gBHD/FQVDlLFJF9ScSnr7GoQHXAsu+skaiBRVFHWtdrCbW45T+q7yz\nD9IXgeIk+skhQOekqSI9IasMKFWTpFPsZg9Ge3OIjiG8125nB9r5Yd28ToAwlDh7\neUt8tcOdZfKmevh6UTWXtgUoe5U7lnKPMZ4aj2pZ6QKBgQDjaJFJ6MpSVS2eVsFo\n5aobQqWlqnHNEfQcpJXNQkjT/+wSR5FdxPD6aWwDsxne5T/tLEj7sQ3+0dIN9gj2\nOLkvtxDaty232d/u5181CzbqB1Uh27zfepn3+FEOSGjOk0CNmVFCpEl/OLehPfaP\nke76BliEdnVLADpQTrC/L0plHQKBgQDFOl+uzzPV56p2tt5bnwpxqE0RBXrESRtK\nR3MBAlXxcL5rDPMQ5m82CGWaZiIqcy82GjBl93ya++5m81qjeBtQ0gxK4wyucCgX\nLnzDJdZMSktYDuYME0W2y9iEbKS4Lx5uewKv5CofisnHG3FKO3DMgHM0WgJoN8L5\nfF0U49l62QKBgBXzZALUW6My4aJlEWpEsPTMrByfpTh8QSn6oRMdENaV332sNtXs\nSq6BOpHo2dhwHImSOsFAx+8O5c2/MAJEW2vFqfTStbEHcNworUH7gSN57bfE9ChG\nN1J+P6S3TJaUFCkW4YcjQIztNpxz1LbrCTxNHII8xPmmXfqefeUWdYHpAoGBALjI\nukD0DOLKjKFxL9+zoHtgbeQWuDETNahgTNWTNKZjNWTi2xDodSWwtFD2g+g1xvPv\nkYzXVT138KMwOamSrDUKt02qcIU2u7kMawQDfUY5DWJRgyOpItXjItbfW2zdaKum\nQJw/L2AiDm6nvXsJOePALS/NbRfrtpc895DM8UPxAoGAYrQV5t+ITYih49GugBHe\n6kNeFhkKX7A/lPO+Mj58KE8lZ/tapxAM7GuNVbeMxrIdKFtTLII6zTuIjO94w2Wp\n3lToqWOH+OBlhvLCZkdwlaqxkJ7UeIt0zqGdACMeufMPHwlHPWTZsB+BmZA3IVT1\nEwAL9DAmk6PqrSHgqz2u898=\n-----END PRIVATE KEY-----\n",
+  "client_email": "shellhacks2020@shellhacks2020-290707.iam.gserviceaccount.com",
+  "client_id": "103890078786204447424",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/shellhacks2020%40shellhacks2020-290707.iam.gserviceaccount.com"
+}
