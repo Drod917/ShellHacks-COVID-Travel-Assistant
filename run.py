@@ -1,22 +1,49 @@
 #If you see this, then I did something right.
-from flask import Flask, request, jsonify, render_template
-from google.cloud import bigquery
-import os
-import dialogflow
-import requests
-import pusher
 import datetime
 import json
+import os
+import binascii
+
+import dialogflow
+import pusher
+import requests
+from flask import Flask, jsonify, render_template, request
+from google.api_core.exceptions import InvalidArgument
+
+from query import query
+
 app = Flask(__name__)
+
+# DIALOGFLOW_PROJECT_ID = 'covidtravelassistant'
+# DIALOGFLOW_LANGUAGE_CODE = 'en-US'
+# GOOGLE_APPLICATION_CREDENTIALS = 'static\JSON\covidtravelassistant-7fccee1a19f5.json'
+# SESSION_ID =  [ session for session in range(0,99999) ]
+# text_to_be_analyzed = "Hi! I'm David and I'd like to eat some sushi, can you help me?"
+# session_client = dialogflow.SessionsClient()
+# session = session_client.session_path(DIALOGFLOW_PROJECT_ID, SESSION_ID)
+# text_input = dialogflow.types.TextInput(text=text_to_be_analyzed, language_code=DIALOGFLOW_LANGUAGE_CODE)
+# query_input = dialogflow.types.QueryInput(text=text_input)
+# try:
+#     response = session_client.detect_intent(session=session, query_input=query_input)
+# except InvalidArgument:
+#     raise
+# print("Query text:", response.query_result.query_text)
+# print("Detected intent:", response.query_result.intent.display_name)
+# print("Detected intent confidence:", response.query_result.intent_detection_confidence)
+# print("Fulfillment text:", response.query_result.fulfillment_text)
+
 
 @app.route("/")
 def index():
     return render_template("index.html")
 
-@app.route('/bq', methods=['GET'])
+@app.route('/', methods=['POST'])
 def send():
-    destination = 'New York'
-    date = datetime.date(2020, 9, 23)
+    req = request.json
+    destination = req['destination']
+    date = datetime.datetime.strptime(req['date'], '%Y-%m-%d')
+    print(destination)
+    print(date)
     
     #Perform a query.
     QUERY = (
@@ -26,7 +53,7 @@ def send():
         'ORDER BY prediction_date '
         'LIMIT 100')
 
-    result = query(QUERY)
+    result = clean_query(QUERY)
     return jsonify(result)
     
 # POST example template

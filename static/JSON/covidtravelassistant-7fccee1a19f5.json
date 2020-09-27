@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "covidtravelassistant",
+  "private_key_id": "7fccee1a19f53b595ece5325541df59a558af2be",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC4NFESw5tuUN3j\n74tM3iBeHQvNq9c4B2r6zn8b4r1t2oh5BmOzXLtIaIGp+2VFYEkYnP3uInLMeBGi\n/tpSXjI9veX1KhrZnjHEv83PVpFvYqR9Rq+yP02XyzlZlBPLNOuBfl6vjAL+0V7c\nXNmVx8zZOxgwSlzzUP3hOrpy2RU9frh6fjV965LxIK2qEOkCWLzVDoXmbRRLSnzv\nEXs++csehWohkp+v0m8lXZEmIp6yfwxqYOkb9lJ4OygcFMGpMX0dR7kdzCEcIVgS\n+qaNHw70BZdLSK/O6ISJdKlAyHEN/CMl/H5/ciHeci6cGOy0y7Vv44eOGn1ho4Ya\nbgNvdQTRAgMBAAECggEACeQ7T0nkPJQImk8YeJ/79nnSUrDN3ZMeZkn07usp126T\nAga7D1xlLTH5doaKrWNKgZEanLFKX1r6PXm4gRBQW9ro8JWafAGf9AwFsgLYy/Ws\n1hJX6Hc4RDS0R3BpcLHOjLVbwcr/tS3KjYRJ5d5lDGw9NAimPaWlgHT+IqEwIA1o\n6TxxOssMCFDfD8z3bhiMOsnLEPQNjTLD4+ShJBbh3L2/5M9BeeDj72p8Zb30X7Qs\nJd+iGFQDrCughlQHpsq81FbAXVhEURy9GiIzTDrMeHGKWRGlCN5kq9UN+nOqlWxj\nECuwEnedCIpavkbdKdd1mEsTSaqwszC2DBM7/QP5zQKBgQDbr/vnkf1FdDpODHx6\nnOpL/lKCTKQ1qMzE3UdwzwMkBGMYOkiLLlJw3UeQ2097twelz6nTPd9bKQHAsCQc\nO9NoXcWqQ3ndNYQgPgFljbmdkVlsO8ZZ9OkoCycthsnimSwGwuESmEKv0Aoo+rrh\nohLC++87/KJR1vFir4Y0Y42OtQKBgQDWpuAucXdq1NWwHHDvJXlUGWIh/UBws76U\nuSHuA/BT4BhqxvZntr088gTPoQR79A+8JYGRNKnxWWw8q5qqbE13+1ns8pudVCR8\nYhKXcHfHGF1wd6i8avql9yFS9CjtMn3pm8YO8djKaMwhvGIs/iCXit/B9So8Y/LY\nDa7v/72TLQKBgBxlT+MrvJf4oPyron9avvIZqmKLM4J4Ehe0HmLXbyl9o61jAzNy\nRleuUmzH3Cs6ijOFdwcF7VPkJgTY/6Hinb3UuRL768mK/EwKl7WfrwlN20ghJc9E\n18pEPskkrf2rHMS29c6ofZ4p/tYzKmq1v0USuWaAjh6T8Nl3pJoq8AYtAoGBANW+\nnoYg3vU2swMHjz3UZxjjneCSutR/aEvYfnzw1yPuhuHs9fkY8x/5L+lBQaHcyr5j\n6r2ZX5DBpxJTH1SNPCc517Ynb+Yen6ZsUm8Sw3MyQ/l2bkQRkz4o9LoR/58TJGa3\ng2XmViZYbM07Ndfvxqyg0WfmpgQ00uFp3sWGOFSRAoGAdd9PiMeqTDmbs55Fp+zL\nzZylThsN2I1wv2xoPEdySa+DBkc1oh5PQi3cZjlA338zTR30ASZY9AAqq/H1fWRc\nSvv3fzfFEnufQdaSL/PAR72En1ohE1Wi7lqIFK0T1L9N1MWznpzS9GEFVfat2wzL\nBkvnCGtyCL5Ps8uHOqi07aM=\n-----END PRIVATE KEY-----\n",
+  "client_email": "covidtravelassistant@covidtravelassistant.iam.gserviceaccount.com",
+  "client_id": "100648750512660946929",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/covidtravelassistant%40covidtravelassistant.iam.gserviceaccount.com"
+}
