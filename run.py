@@ -16,23 +16,26 @@ load_dotenv()
 
 app = Flask(__name__)
 
-DIALOGFLOW_PROJECT_ID = 'covidtravelassistant'
+DIALOGFLOW_PROJECT_ID = 'CovidTravelAssistant'
 DIALOGFLOW_LANGUAGE_CODE = 'en-US'
 GOOGLE_APPLICATION_CREDENTIALS = 'static\JSON\covidtravelassistant-7fccee1a19f5.json'
 SESSION_ID =  [ session for session in range(0,1) ]
-text_to_be_analyzed = "Hi! I'm David and I'd like to eat some sushi, can you help me?"
+
+text_to_be_analyzed = "Pulls data from webchat"
 session_client = dialogflow.SessionsClient()
 session = session_client.session_path(DIALOGFLOW_PROJECT_ID, SESSION_ID)
 text_input = dialogflow.types.TextInput(text=text_to_be_analyzed, language_code=DIALOGFLOW_LANGUAGE_CODE)
 query_input = dialogflow.types.QueryInput(text=text_input)
-try:
-    response = session_client.detect_intent(session=session, query_input=query_input)
-except InvalidArgument:
-    raise
-print("Query text:", response.query_result.query_text)
-print("Detected intent:", response.query_result.intent.display_name)
-print("Detected intent confidence:", response.query_result.intent_detection_confidence)
-print("Fulfillment text:", response.query_result.fulfillment_text)
+
+
+# try:
+#     response = session_client.detect_intent(session=session, query_input=query_input)
+# except InvalidArgument:
+#     raise
+# print("Query text:", response.query_result.query_text)
+# print("Detected intent:", response.query_result.intent.display_name)
+# print("Detected intent confidence:", response.query_result.intent_detection_confidence)
+# print("Fulfillment text:", response.query_result.fulfillment_text)
 
 
 @app.route("/")
