@@ -1,7 +1,6 @@
-
 import json
 
-def getKeywords(request)
+def getKeywords(request):
     keywords = json.load(jsonify(reques))
 
     state = keywords[0]
